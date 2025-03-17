@@ -1,15 +1,13 @@
-class SpecialistVeterinarian extends GeneralVeterinarian {
+// Class named SpecialistVeterinarian that implements Veterinarian and extends GeneralVeterinarian
+public class SpecialistVeterinarian extends GeneralVeterinarian {
 
     private String specialty;
 
     public SpecialistVeterinarian(String name, String specialty) {
-        super(name);
+        super(name);// Calls the GeneralVeterinarian constructor
         this.specialty = specialty;
     }
-
-    public SpecialistVeterinarian() {
-    }
-
+    //Overriding the function examinePet in GeneralVeterinarian
     @Override
     public String examinePet(Pet pet) {
         return "Special examination for " + pet.getName() + " in " + specialty +
