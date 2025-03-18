@@ -13,7 +13,7 @@ public class PetClinic {
         vets.add(new SpecialistVeterinarian("Dr. Adams", "Dermatology"));
        // For each pet, print its details and have veterinarians examine it
         for (Pet pet : pets) {
-            System.out.println(pet.getName() + " the " + pet.getSpecies() + " says: " + pet.makeSound());
+            System.out.println(pet.getName() + " the " + pet.species + " says: " + pet.makeSound());
             System.out.println(pet.getName() + " eats: " + pet.eat());
             
             for (Veterinarian vet : vets) {

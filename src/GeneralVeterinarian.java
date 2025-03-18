@@ -16,7 +16,7 @@ public class GeneralVeterinarian implements Veterinarian{
     @Override
     public String examinePet(Pet pet) {
         return "General examination for "+ pet.getName() +
-                ".  Species: " + pet.getSpecies()
+                ".  Species: " + pet.species
                 + ",  Age: " + pet.getAge();
 
     }

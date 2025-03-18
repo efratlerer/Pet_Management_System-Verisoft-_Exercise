@@ -11,7 +11,7 @@ public class SpecialistVeterinarian extends GeneralVeterinarian {
     @Override
     public String examinePet(Pet pet) {
         return "Special examination for " + pet.getName() + " in " + specialty +
-                ".  Species: " + pet.getSpecies()
+                ".  Species: " + pet.species
                 + ",  Age: " + pet.getAge();
     }
 }
